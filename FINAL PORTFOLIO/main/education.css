@@ -1,0 +1,138 @@
+#resume-section {
+  width: 100%;
+  min-height: 100vh;
+  background: url(pic/bg.jpg) center/cover no-repeat rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.ikcontainer {
+  width: 100%;
+  padding: 35px 10%;
+  padding-right: calc(10% - 30px); /* Adjusted padding */
+}
+
+main.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.title h2{
+  font-family: helvetica;
+  color: skyblue;
+  z-index: 1;
+  padding: 0 30px 20px;
+  position: relative;
+}
+.titles h2 {
+  font-family: helvetica;
+  color: skyblue;
+  z-index: 1;
+  padding: 0 30px 20px;
+  position: relative;
+  display: flex;
+  
+}
+
+
+
+.col .contents {
+  padding: 0 30px;
+  border-left: 2px solid rgb(230, 104, 59);
+}
+
+.col .contents .box {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #252222;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+
+.col .contents .box:hover {
+  box-shadow: 0 3px 12px 0 white;
+  border: 1px solid transparent;
+}
+
+.col .contents .box::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: skyblue;
+  border: 2px solid white;
+}
+
+.box h4 {
+  position: relative;
+  color: rgb(19, 20, 20);
+}
+
+.box h3 {
+  font-size: 19px;
+  padding: 10px 0 6px;
+  font-family: helvetica;
+  color: rgb(19, 20, 20);
+}
+
+.box p {
+  line-height: 1.2;
+  color: rgb(19, 20, 20);
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  main.row {
+    grid-template-columns: 1fr;
+  }
+
+  .row .col:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+#resume-section .btnbox2 .btnbox1 {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.btnbox2 {
+  position: relative;
+  display: inline-block;
+}
+
+.btnbox2 a {
+  width: 200px;
+  height: 110%;
+  background-color: rgb(221, 77, 178);
+  border-radius: 8px;
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans";
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s;
+}
+.btnbox2 a:hover{
+color:black;
+background-color: white;
+}
